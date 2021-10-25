@@ -54,6 +54,7 @@ In **this** folder, create a new Python file named `functions.py`, and create th
 4. `excited(word)`: Takes one string as input, and returns the string with an exclamation mark to the end.
 5. `stringJoin(str1, str2)`: Takes two strings as input, and returns the two strings joined with a space between them.
 6. `birthday(name)`: Prints "Happy birthday, [name]!" to the screen (using the inputted name). No return value.
+7. `quadratic(a, b, c)`: Applies the quadratic formula to give the solutions to ax^2+bx+c=0.
 
 **Note:** Your `functions.py` should *define* each function.
 If you run the file, it won't produce any output unless you actually *call* the functions, which is fine!
