@@ -66,14 +66,23 @@ Note, this increases the length of your list by 1.
 
 ### Removing items from a list: `del list[index]`
 
-To remove a specific item from a list, use `del` with the index to remove:
+**If you know the index of the item:**
+use `del` with the index to remove
 
 ```python
 del shopping[2]         # Removes the third item ('Yogurt')
 print(shopping[2])      # Will display 'Cereal' (the new third item)
 ```
 
-Note, this decreases the length of your list by 1.
+**If you know which item to remove, but not its index:**
+use the `.remove()` method of the list
+
+```python
+shopping.remove('Yogurt')         # Removes the 'Yogurt' from the list
+print(shopping[2])                # Will display 'Cereal' (the new third item)
+```
+
+Note, these decrease the length of your list by 1.
 
 ### Changing items in a list
 
@@ -128,18 +137,16 @@ There's plenty more that can be done with lists! Check out the [lists documentat
 
 ## Exercises
 
-In **this** folder, create the files for the following exercises.
-
 **Exercise 1:** Create a file called `classRoll.py`. In it, do the following:
 
 1. Create the following list:
-    `roll = ['Jessica', 'Emily', 'Jordan', 'Kayley', 'Bruce', 'Michael', 'Everett', 'Lisa', 'Sam', 'Noah']`
-2. Students take turns each week cleaning the class guinea pig cage. Print the name of the third student on the roll so they know it's their turn.
+    `classList = ['Jessica', 'Emily', 'Jordan', 'Kayley', 'Bruce', 'Michael', 'Everett', 'Lisa', 'Sam', 'Noah']`
+2. Students take turns each week cleaning the class guinea pig cage. Print the name of the third student on the class list so they know it's their turn.
 3. Create a variable called `enrolment` and assign it the number of students in the class (length of the list).
-4. A new student arrived - `'James'`. Add him to the roll.
-5. `'Jordan'` changed schools. Remove him from the roll.
-6. `'Michael'` prefers to go by 'Mike'. Change his name on the roll.
-7. (Challenge) Alphabetise the roll.
+4. A new student arrived - `'James'`. Add him to the class list.
+5. `'Jordan'` changed schools. Remove him from the class list.
+6. `'Michael'` prefers to go by 'Mike'. Change his name on the class list.
+7. (Challenge) Alphabetise the class list.
 8. (Challenge) Reverse the list.
 9. (Challenge) Print the name of a random student in the class.
 10. (Challenge) Create two lists, each with 5 students (one with the first half of the class, the other with the second)
