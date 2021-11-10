@@ -64,7 +64,7 @@ print(shopping[6])              # Will display 'Ice cream'
 
 Note, this increases the length of your list by 1.
 
-### Removing items from a list: `del list[index]`
+### Removing items from a list: `del list[index]` or `list.remove(item)`
 
 **If you know the index of the item:**
 use `del` with the index to remove
